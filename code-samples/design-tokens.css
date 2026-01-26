@@ -1,0 +1,247 @@
+/**
+ * Design Tokens (CSS Custom Properties)
+ * 
+ * This file contains all design system variables used throughout the
+ * Rabat Cultural Website. Using CSS custom properties allows for:
+ * - Consistent design across all pages
+ * - Easy theme updates
+ * - Better maintainability
+ * - Dynamic theming possibilities
+ * 
+ * @package Rabat_Cultural_Website
+ * @version 2.0.0
+ */
+
+:root {
+    /* ===========================
+       COLOR PALETTE
+       =========================== */
+    
+    /* Primary Colors - Moroccan inspired */
+    --color-primary: #B8302A;        /* Moroccan Red - CTAs, links */
+    --color-secondary: #2C6E49;      /* Moroccan Green - nature, sports */
+    --color-accent: #3A5F7D;         /* Atlantic Blue - water, info */
+    --color-gold: #C9A961;           /* Moroccan Gold - premium, highlights */
+    
+    /* Neutral Colors */
+    --color-ivory: #FAF7F2;          /* Light backgrounds */
+    --color-sand: #E8DFD0;           /* Card backgrounds */
+    --color-stone: #A39B8B;          /* Secondary text */
+    --color-charcoal: #2D2D2A;       /* Primary text */
+    --color-white: #FFFFFF;          /* Pure white */
+    --color-black: #1A1A1A;          /* Deep black */
+    
+    /* Semantic Colors */
+    --color-success: #2C6E49;        /* Success messages */
+    --color-warning: #C9A961;        /* Warnings */
+    --color-error: #B8302A;          /* Errors */
+    --color-info: #3A5F7D;           /* Information */
+    
+    
+    /* ===========================
+       TYPOGRAPHY
+       =========================== */
+    
+    /* Font Families */
+    --font-display: 'Playfair Display', serif;      /* Headlines */
+    --font-body: 'Inter', sans-serif;               /* Body text */
+    --font-accent: 'Cormorant Garamond', serif;     /* Special text */
+    
+    /* Font Sizes - Fluid Typography */
+    --text-6xl: clamp(3rem, 5vw, 4.5rem);           /* 48-72px */
+    --text-5xl: clamp(2.5rem, 4vw, 3.5rem);         /* 40-56px */
+    --text-4xl: clamp(2rem, 3vw, 3rem);             /* 32-48px */
+    --text-3xl: clamp(1.75rem, 2.5vw, 2.25rem);     /* 28-36px */
+    --text-2xl: clamp(1.5rem, 2vw, 2rem);           /* 24-32px */
+    --text-xl: clamp(1.25rem, 1.5vw, 1.5rem);       /* 20-24px */
+    --text-lg: 1.125rem;                            /* 18px */
+    --text-base: 1rem;                              /* 16px - base */
+    --text-sm: 0.875rem;                            /* 14px */
+    --text-xs: 0.75rem;                             /* 12px */
+    
+    /* Font Weights */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    
+    /* Line Heights */
+    --leading-tight: 1.1;
+    --leading-snug: 1.3;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.7;
+    --leading-loose: 2;
+    
+    
+    /* ===========================
+       SPACING SYSTEM
+       =========================== */
+    
+    /* Base unit: 0.5rem (8px) */
+    --space-xs: 0.5rem;              /* 8px */
+    --space-sm: 1rem;                /* 16px */
+    --space-md: 2rem;                /* 32px */
+    --space-lg: 4rem;                /* 64px */
+    --space-xl: 6rem;                /* 96px */
+    --space-2xl: 8rem;               /* 128px */
+    --space-3xl: 12rem;              /* 192px */
+    
+    
+    /* ===========================
+       LAYOUT
+       =========================== */
+    
+    /* Container Widths */
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+    
+    /* Grid Gaps */
+    --gap-xs: 0.5rem;
+    --gap-sm: 1rem;
+    --gap-md: 2rem;
+    --gap-lg: 3rem;
+    
+    
+    /* ===========================
+       BORDERS & RADIUS
+       =========================== */
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+    
+    /* Border Width */
+    --border-thin: 1px;
+    --border-medium: 2px;
+    --border-thick: 4px;
+    
+    
+    /* ===========================
+       SHADOWS
+       =========================== */
+    
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 30px 60px rgba(0, 0, 0, 0.2);
+    
+    /* Colored Shadows */
+    --shadow-primary: 0 10px 30px rgba(184, 48, 42, 0.2);
+    --shadow-secondary: 0 10px 30px rgba(44, 110, 73, 0.2);
+    
+    
+    /* ===========================
+       TRANSITIONS & ANIMATIONS
+       =========================== */
+    
+    /* Duration */
+    --duration-fast: 0.15s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.6s;
+    
+    /* Timing Functions */
+    --ease-linear: linear;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    
+    /* ===========================
+       Z-INDEX SCALE
+       =========================== */
+    
+    --z-base: 0;
+    --z-dropdown: 10;
+    --z-sticky: 100;
+    --z-fixed: 500;
+    --z-modal-backdrop: 900;
+    --z-modal: 1000;
+    --z-popover: 1100;
+    --z-tooltip: 1200;
+}
+
+
+/**
+ * Usage Examples:
+ * 
+ * 1. Colors:
+ *    .button {
+ *        background: var(--color-primary);
+ *        color: var(--color-white);
+ *    }
+ * 
+ * 2. Typography:
+ *    h1 {
+ *        font-family: var(--font-display);
+ *        font-size: var(--text-5xl);
+ *        font-weight: var(--font-semibold);
+ *        line-height: var(--leading-tight);
+ *    }
+ * 
+ * 3. Spacing:
+ *    .card {
+ *        padding: var(--space-md);
+ *        margin-bottom: var(--space-lg);
+ *    }
+ * 
+ * 4. Shadows:
+ *    .card {
+ *        box-shadow: var(--shadow-md);
+ *    }
+ *    
+ *    .card:hover {
+ *        box-shadow: var(--shadow-lg);
+ *    }
+ * 
+ * 5. Transitions:
+ *    .button {
+ *        transition: all var(--duration-normal) var(--ease-smooth);
+ *    }
+ * 
+ * Benefits of Design Tokens:
+ * - Single source of truth for design values
+ * - Easy to maintain and update
+ * - Consistent design across entire site
+ * - Enables dynamic theming
+ * - Better developer experience
+ * - Faster development
+ * 
+ * How to Update the Design:
+ * 1. Change values in this file
+ * 2. Changes apply site-wide automatically
+ * 3. No need to search/replace throughout codebase
+ * 4. Consistent updates guaranteed
+ * 
+ * Naming Convention:
+ * --{category}-{property}-{variant}
+ * 
+ * Examples:
+ * --color-primary          (primary brand color)
+ * --space-md               (medium spacing)
+ * --text-2xl               (extra large text)
+ * --shadow-lg              (large shadow)
+ * --duration-normal        (normal animation duration)
+ * 
+ * Browser Support:
+ * - Chrome 49+
+ * - Firefox 31+
+ * - Safari 9.1+
+ * - Edge 15+
+ * - All modern browsers
+ * 
+ * Fallbacks for older browsers can be added:
+ * .button {
+ *     background: #B8302A;                    // Fallback
+ *     background: var(--color-primary);       // Modern
+ * }
+ */
